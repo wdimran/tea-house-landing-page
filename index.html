@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tea House Landing Page</title>
+    <!-- google font cdn  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
+    <!-- tailwind cdn  -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -22,28 +24,50 @@
         },
       };
     </script>
+    <!-- font awesome  -->
+    <script
+      src="https://kit.fontawesome.com/48d42640e1.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
-      <header class="flex pt-10 mb-20">
+      <header>
         <!-- banner content -->
-        <div>
+        <div class="sm:flex md:gap-y-3 pt-10 mb-20">
           <!-- left side content             -->
           <div>
-            <h1>
+            <h1 class="text-5xl md:text-7xl font-extrabold">
               It's good <br />
               tea time at The <br />Tea House
             </h1>
             <br />
-            <p>
+            <p class="text-gray-500 w-3/4 text-lg">
               Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
               Your Taste Buds.
             </p>
             <br />
-            <button>Explore More</button>
+            <button
+              class="bg-gradient-to-r from-orange-500 to-red-700 px-6 py-3 rounded-lg text-white text-xl font-semibold"
+            >
+              Explore More <i class="fa-solid fa-arrow-right -rotate-45"></i>
+            </button>
           </div>
           <!-- right side image -->
-          <div></div>
+          <div class="relative">
+            <img src="./images/banner.png" alt="" class="w-full" />
+
+            <!-- card content  -->
+            <div class="flex items-center bg-white shadow-lg px-2 py2 md:px-10 lg:py-4 rounded-lg gap-x-2.5 absolute" >
+              <div>
+                <i class="fa-solid fa-star text-3xl text-amber-500"></i>
+              </div>
+              <div>
+                <h2 class="text-xl font-bold">5.00</h2>
+                <p class="text-base text-gray-500 font-semibold">Trust Pilot Ratings</p>
+              </div>
+            </div>
+          </div>
         </div>
       </header>
     </main>
